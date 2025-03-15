@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Pathway - Roadmaps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #35424a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap-section h3 {
+    color: #4c4541;
+    font-weight: bold;
+    border-bottom: 2px solid #e2846a;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #35424a;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Copyright Section */
+.bg-secondary {
+    background-color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .roadmap-section {
+        padding: 15px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #35424a; padding: 10px;">
+        <div class="container">
+            <!-- Brand Logo and Name -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.jpg" alt="Career Pathway Logo" width="100" height="50" class="me-2">
+                <span style="color:#e8491d; font-size: 24px; font-weight: bold;">Career</span>
+                <span style="color:#f0eae9; font-size: 24px; font-weight: bold; margin-left: 5px;">Pathway</span>
+            </a>
+    
+            <!-- Navbar Toggle for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="roadmaps.html">Roadmaps</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="roadmaps" class="py-5 bg-light">
+        <div class="container">
+            <br><br><br><br>
+            <h2 class="text-center mb-5">Career Roadmaps</h2>
+            <div class="roadmap-section">
+                <h3>Leadership Roadmap</h3>
+                <p>Explore our Leadership Roadmap designed to enhance your management skills and prepare you for leadership roles.</p>
+                <div class="row" id="leadership-roadmap">
+                    <div class="col-md-4 mb-4">
+                        <a href="leadership-in-management.html">
+                            <div class="card h-100">
+                                <img src="lm.jpg" class="card-img-top" alt="Leadership in Management" height="300px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Leadership in Management</h5>
+                                    <p class="card-text">Develop essential leadership skills to manage teams effectively.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="project-management-professional.html">
+                            <div class="card h-100">
+                                <img src="PM.jpg" class="card-img-top" alt="Project Management Professional (PMP)" height="300px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project Management Professional (PMP)</h5>
+                                    <p class="card-text">Gain expertise in project management methodologies and practices.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="buisness-strategy-innovation.html">
+                            <div class="card h-100">
+                                <img src="BS.jpg" class="card-img-top" alt="Business Strategy and Innovation" height="300px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Business Strategy and Innovation</h5>
+                                    <p class="card-text">Learn how to create and implement effective business strategies.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-section">
+                <h3>Project Management Roadmap</h3>
+                <p>Our Project Management roadmap will equip you with the skills needed to manage projects effectively.</p>
+                <div class="row" id="project-management-courses">
+                    <div class="col-md-4 mb-4">
+                        <a href="entrepreneurship-startups.html">
+                            <div class="card h-100">
+                                <img src="startup.jpg" class="card-img-top" alt="Entrepreneurship and Startups">
+                                <div class="card-body">
+                                    <h5 class="card-title">Entrepreneurship and Startups</h5>
+                                    <p class="card-text">Understand the fundamentals of starting and managing a new business.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="financial-management-executives.html">
+                            <div class="card h-100">
+                                <img src="finance.jpg" class="card-img-top" alt="Financial Management for Executives">
+                                <div class="card-body">
+                                    <h5 class="card-title">Financial Management for Executives</h5>
+                                    <p class="card-text">Learn financial principles to make informed business decisions.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="emerging-marketing-strategies.html">
+                            <div class="card h-100">
+                                <img src="marketing.jpg" class="card-img-top" alt="Emerging Marketing Strategies">
+                                <div class="card-body">
+                                    <h5 class="card-title">Emerging Finance Strategies</h5>
+                                    <p class="card-text">Learn finance strategies to make informed business decisions.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing Roadmap -->
+            <div class="roadmap-section">
+                <h3>Marketing Roadmap</h3>
+                <p>Explore our Marketing roadmap to enhance your skills in digital marketing, branding, and consumer behavior.</p>
+                <div class="row" id="marketing-courses">
+                    <div class="col-md-4 mb-4">
+                        <a href="digital-marketing-strategies.html">
+                            <div class="card h-100">
+                                <img src="mm.jpg" class="card-img-top" alt="Digital Marketing Strategies">
+                                <div class="card-body">
+                                    <h5 class="card-title">Digital Marketing Strategies</h5>
+                                    <p class="card-text">Master the art of digital marketing to reach your target audience.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="brand-management.html">
+                            <div class="card h-100">
+                                <img src="brand.jpg" class="card-img-top" alt="Brand Management" height="350px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brand Management</h5>
+                                    <p class="card-text">Learn how to build and manage a successful brand.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="consumer-behavior.html">
+                            <div class="card h-100">
+                                <img src="cb.jpg" class="card-img-top" alt="Consumer Behavior" height="350px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Consumer Behavior</h5>
+                                    <p class="card-text">Understand the psychology behind consumer decisions.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Top Products</h3>
+                    <ul class="list-unstyled">
+                        <li>Manage Reputation</li>
+                        <li>Power Tools</li>
+                        <li>Managed Website</li>
+                        <li>Marketing Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="courses.html" class="text-white">Courses</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Features</h3>
+                    <ul class="list-unstyled">
+                        <li>Managed Website</li>
+                        <li>Manage Reputation</li>
+                        <li>Power Tools</li>
+                        <li>Marketing Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for the latest updates</p>
+                    <form id="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-secondary text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">Copyright © 2023 All rights reserved | This template is made with <i
+                    class="fas fa-heart text-danger"></i> by Career Pathway</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

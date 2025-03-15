@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Engineering Roadmap - Career Pathway</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="road.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #35424a; padding: 10px;">
+        <div class="container">
+            <!-- Brand Logo and Name -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.jpg" alt="Career Pathway Logo" width="70" height="50" class="me-2">
+                <span style="color:#e8491d; font-size: 24px; font-weight: bold;">Career</span>
+                <span style="color:#f0eae9; font-size: 24px; font-weight: bold; margin-left: 5px;">Pathway</span>
+            </a>
+    
+            <!-- Navbar Toggle for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="roadmaps.html">Roadmaps</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center mb-5">Marine Engineering Roadmap</h1>
+        <div class="roadmap-timeline">
+            <div class="roadmap-item">
+                <div class="roadmap-content">
+                    <h3>Introduction to Marine Engineering</h3>
+                    <p>Learn the fundamentals of marine engineering and its significance in maritime industries.</p>
+                    <div class="roadmap-details">
+                        <h4>Key Topics:</h4>
+                        <ul>
+                            <li>History and Evolution of Marine Engineering</li>
+                            <li>Roles and Responsibilities of a Marine Engineer</li>
+                            <li>Basic Marine Engineering Concepts</li>
+                        </ul>
+                        <p><strong>Reading Content:</strong> "Marine Engineering" by Roy L. Harrington.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-content">
+                    <h3>Marine Propulsion Systems</h3>
+                    <p>Understanding different propulsion systems used in ships.</p>
+                    <div class="roadmap-details">
+                        <h4>Key Topics:</h4>
+                        <ul>
+                            <li>Diesel and Gas Turbine Engines</li>
+                            <li>Steam and Nuclear Propulsion</li>
+                            <li>Electric and Hybrid Propulsion Systems</li>
+                        </ul>
+                        <p><strong>Reading Content:</strong> "Principles of Naval Engineering" by U.S. Naval Education & Training.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-content">
+                    <h3>Ship Design and Construction</h3>
+                    <p>Learn about shipbuilding, structural design, and materials used in construction.</p>
+                    <div class="roadmap-details">
+                        <h4>Key Topics:</h4>
+                        <ul>
+                            <li>Ship Hull Design</li>
+                            <li>Materials Used in Shipbuilding</li>
+                            <li>Stability and Buoyancy</li>
+                        </ul>
+                        <p><strong>Reading Content:</strong> "Ship Construction" by D.J. Eyres.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-content">
+                    <h3>Marine Safety and Environmental Regulations</h3>
+                    <p>Understanding safety standards and environmental protection in marine engineering.</p>
+                    <div class="roadmap-details">
+                        <h4>Key Topics:</h4>
+                        <ul>
+                            <li>International Maritime Organization (IMO) Regulations</li>
+                            <li>Pollution Control and Environmental Safety</li>
+                            <li>Emergency Response and Safety Procedures</li>
+                        </ul>
+                        <p><strong>Reading Content:</strong> "Marine Safety" by Charles F. Chapman.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-content">
+                    <h3>Advanced Marine Engineering and Career Paths</h3>
+                    <p>Exploring advanced topics and career opportunities in marine engineering.</p>
+                    <div class="roadmap-details">
+                        <h4>Key Topics:</h4>
+                        <ul>
+                            <li>Automation in Marine Engineering</li>
+                            <li>Renewable Energy in Maritime Industry</li>
+                            <li>Future Trends and Research Areas</li>
+                        </ul>
+                        <p><strong>Reading Content:</strong> "Naval Architecture for Marine Engineers" by E.C. Tupper.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Career Pathway. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const roadmapHeaders = document.querySelectorAll('.roadmap-content h3');
+            roadmapHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    this.nextElementSibling.nextElementSibling.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Career Pathway</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="nav.css">
+<style>
+   
+   /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8f8f8, #ffffff);
+    color: #35424a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Showcase Section */
+#showcase {
+    text-align: center;
+    padding: 50px 0;
+    background: white;
+    border-bottom: 3px solid #e8491d;
+}
+
+#showcase h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #130602;
+}
+
+#showcase p {
+    font-size: 1.2rem;
+    color: #35424a;
+}
+
+/* Blog Main Content */
+#main {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Blog Post */
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+.post h3 {
+    color: #0d0705;
+    font-weight: bold;
+}
+
+.post small {
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    color: #555;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e8491d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.post a:hover {
+    text-decoration: underline;
+    color: #c7370e;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #showcase h1 {
+        font-size: 2rem;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .post h3 {
+        font-size: 1.3rem;
+    }
+
+    #sidebar {
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+/* Blog Section */
+#blog-section {
+    padding: 40px 0;
+}
+
+/* Sidebar - Full Height */
+#sidebar {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.jpg') center/cover no-repeat;
+
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    height: 100%; /* Ensures full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sidebar h3 {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#sidebar ul li a:hover {
+    color: #e8491d;
+}
+
+/* Ensuring Sidebar Covers Full Height of Main Content */
+#blog-section .row {
+    display: flex;
+    align-items: stretch;
+}
+
+.col-md-4 {
+    display: flex;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .col-md-4 {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+        
+</style>
+    
+   
+    
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #35424a; padding: 10px;">
+        <div class="container">
+            <!-- Brand Logo and Name -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.jpg" alt="Career Pathway Logo" width="100" height="50" class="me-2">
+                <span style="color:#e8491d; font-size: 24px; font-weight: bold;">Career</span>
+                <span style="color:#f0eae9; font-size: 24px; font-weight: bold; margin-left: 5px;">Pathway</span>
+            </a>
+    
+            <!-- Navbar Toggle for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="roadmaps.html">Roadmaps</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login.html">Login</a></li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+<br><br><br><br>
+    <section id="showcase">
+        <div class="container">
+            <h1 style="color: #e8491d;">Career Insights Blog</h1>
+            <p style="color: #35424a;">Stay updated with the latest career trends and advice</p>
+        </div>
+    </section>
+    <!-- Blog Main Content -->
+    <!-- Blog Posts Section -->
+<section id="blog-section" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Main Content -->
+            <div class="col-md-8">
+                <div class="post">
+                    <h3>10 In-Demand Skills for 2024</h3>
+                    <small>Posted on Jan 15, 2024 by John Doe</small>
+                    <p>In today's rapidly evolving job market, staying ahead of the curve is crucial...</p>
+                    <a href="#" class="read-more" data-title="10 In-Demand Skills for 2024" 
+                        data-content="Employers are looking for skills such as data analysis, cloud computing, AI & machine learning, and digital marketing. Upskilling in these areas can increase job opportunities significantly." 
+                        data-author="John Doe" 
+                        data-date="Jan 15, 2024">
+                        Read More
+                    </a>
+                </div>
+                <div class="post">
+                    <h3>How to Ace Your Next Job Interview</h3>
+                    <small>Posted on Jan 10, 2024 by Jane Smith</small>
+                    <p>Preparing for a job interview can be nerve-wracking. This guide provides you with proven strategies...</p>
+                    <a href="#" class="read-more" data-title="How to Ace Your Next Job Interview" 
+                        data-content="Tips include researching the company, practicing common questions, dressing professionally, and following up after the interview. Confidence and preparation are key to success." 
+                        data-author="Jane Smith" 
+                        data-date="Jan 10, 2024">
+                        Read More
+                    </a>
+                </div>
+                <div class="post">
+                    <h3>The Future of Remote Work: Trends and Predictions</h3>
+                    <small>Posted on Jan 5, 2024 by Mike Johnson</small>
+                    <p>Remote work has become increasingly popular in recent years. This article examines...</p>
+                    <a href="#" class="read-more" data-title="The Future of Remote Work" 
+                        data-content="With hybrid work models becoming the new norm, remote work will continue evolving. Companies are adopting flexible work policies to improve productivity and work-life balance." 
+                        data-author="Mike Johnson" 
+                        data-date="Jan 5, 2024">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4 d-flex align-items-center">
+                <aside id="sidebar">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="roadmaps.html">Career Development</a></li>
+                        <li><a href="support.html#tips">Job Search Tips</a></li>
+                        <li><a href="#">Industry Insights</a></li>
+                        <li><a href="about.html#experts">Personal Growth</a></li>
+                        <li><a href="#">Technology Trends</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Blog Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <small id="modalDate"></small>
+                <p id="modalContent"></p>
+                <p><strong>Author: </strong><span id="modalAuthor"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".read-more").forEach(button => {
+            button.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                // Get the data attributes
+                const title = this.getAttribute("data-title");
+                const content = this.getAttribute("data-content");
+                const author = this.getAttribute("data-author");
+                const date = this.getAttribute("data-date");
+
+                // Update modal content
+                document.getElementById("modalTitle").textContent = title;
+                document.getElementById("modalContent").textContent = content;
+                document.getElementById("modalAuthor").textContent = author;
+                document.getElementById("modalDate").textContent = `Posted on ${date}`;
+
+                // Show the modal
+                var modal = new bootstrap.Modal(document.getElementById("blogModal"));
+                modal.show();
+            });
+        });
+    });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Top Products</h3>
+                    <ul class="list-unstyled">
+                        <li>Manage Reputation</li>
+                        <li>Power Tools</li>
+                        <li>Managed Website</li>
+                        <li>Marketing Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="roadmaps.html" class="text-white">Roadmaps</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Features</h3>
+                    <ul class="list-unstyled">
+                        <li>Managed Website</li>
+                        <li>Manage Reputation</li>
+                        <li>Power Tools</li>
+                        <li>Marketing Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for the latest updates</p>
+                    <form id="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </footer>
+
+    <div class="bg-secondary text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">Copyright © 2023 All rights reserved | This template is made with <i class="fas fa-heart text-danger"></i> by Career Pathway</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

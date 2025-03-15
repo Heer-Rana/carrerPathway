@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Career Pathway</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+       
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        .hero-section .btn {
+            
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .hero-section .btn:hover {
+            background: #e69b39;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer-links a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.location.hash === "#experts") {
+                document.getElementById("experts").scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    </script>
+    
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #35424a; padding: 10px;">
+        <div class="container">
+            <!-- Brand Logo and Name -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.jpg" alt="Career Pathway Logo" width="100" height="50" class="me-2">
+                <span style="color:#e8491d; font-size: 24px; font-weight: bold;">Career</span>
+                <span style="color:#f0eae9; font-size: 24px; font-weight: bold; margin-left: 5px;">Pathway</span>
+            </a>
+    
+            <!-- Navbar Toggle for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="roadmaps.html">Roadmaps</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>About Career Pathway</h1>
+            <p>Your gateway to a brighter future!</p>
+            <a href="roadmaps.html" class="btn btn-primary">Explore Roadmaps</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            
+            <!-- First Row: Image Left, Text Right -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <img src="map.jpg" alt="Career Roadmap" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4 text-primary">Our Mission</h2>
+                    <p>This site provides comprehensive roadmaps for various career fields, helping individuals navigate their professional journey with clarity and confidence. Currently, we offer structured and well-researched roadmaps for three major fields: Engineering, Architecture, and Management. Each roadmap outlines key milestones, essential skills, recommended certifications, and potential career opportunities to help learners stay on track. We are continuously working to expand our offerings, and more career fields will be added soon to provide guidance for a wider range of professional paths.</p>
+                </div>
+            </div>
+    
+            <!-- Second Row: Text Left, Image Right -->
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4 text-primary">Our Values</h2>
+                    <ul>
+                        <li><strong>Excellence in Education:</strong> We prioritize high-quality learning resources, ensuring that our roadmaps and courses are curated by industry experts to provide up-to-date and practical knowledge.</li>
+                        <li><strong>Innovation in Career Guidance:</strong> Our platform offers strategic career roadmaps that simplify complex career paths, making it easier for individuals to understand the steps required for success in Engineering, Architecture, and Management.</li>
+                        <li><strong>Personalized Learning Experience:</strong> We recognize that each individual has unique aspirations, so we provide flexible and customizable learning plans that cater to different interests and goals.</li>
+                        <li><strong>Commitment to Success:</strong> We are dedicated to bridging the gap between education and employment by equipping learners with the right skills, certifications, and industry insights needed to excel in their chosen careers.</li>
+                        <li><strong>Expanding Career Opportunities:</strong> While we currently focus on Engineering, Architecture, and Management, we are continuously working on adding more fields, ensuring that learners from all backgrounds have access to structured career roadmaps.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="mapp.png" style="width: 550px; height:500px;" alt="Future Career Growth" class="img-fluid rounded shadow">
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <br><br><br><br>
+    <!-- Team Section -->
+    <section  id="experts" class="py-5 bg-light">
+        <div class="container">
+            <br><br><br>
+            <h2 class="text-center mb-5" style="font-size: 50px;">Meet Our Experts</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card shadow">
+                        <img src="p1.jpg" class="card-img-top" alt="John Doe" style="width: 305px; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">Career Counselor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card shadow">
+                        <img src="p2.jpg" class="card-img-top" alt="Jane Smith" style="width: 305px; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Education Specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card shadow">
+                        <img src="p3.jpg" class="card-img-top" alt="Mike Johnson" style="width: 305px; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mike Johnson</h5>
+                            <p class="card-text">Industry Expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card shadow">
+                        <img src="p4.jpg" class="card-img-top" alt="Sarah Lee" style="width: 305px; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sarah Lee</h5>
+                            <p class="card-text">Student Success Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Top Products</h3>
+                    <ul class="list-unstyled">
+                        <li>Manage Reputation</li>
+                        <li>Power Tools</li>
+                        <li>Managed Website</li>
+                        <li>Marketing Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="roadmaps.html" class="text-white">Roadmaps</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Features</h3>
+                    <ul class="list-unstyled">
+                        <li>Managed Website</li>
+                        <li>Manage Reputation</li>
+                        <li>Power Tools</li>
+                        <li>Marketing Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for the latest updates</p>
+                    <form id="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </footer>
+
+    <div class="bg-secondary text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">Copyright © 2023 All rights reserved | This template is made with <i class="fas fa-heart text-danger"></i> by Career Pathway</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
